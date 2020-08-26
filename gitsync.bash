@@ -115,6 +115,7 @@ show_menus() {
   echo " M A I N - M E N U  "
   echo "~~~~~~~~~~~~~~~~~~~~~"
   echo "~~~~~~~~~~~~~~~~~~~~~"
+  echo "00. sjebang"
   echo "20. ezahr AZ_ACI_waardepapieren-demo_westeurope_azurecontainer_io"
   echo "21. ezahr chromebook_galliumOS"
   echo "22. ezahr commonground"
@@ -195,6 +196,7 @@ read_options(){
 	local choice
 	read -p "Enter choice [ 1 - 99] " choice
 	case $choice in
+	 00) sjebang ;;
          20) git_clone ezahr AZ_ACI_waardepapieren-demo_westeurope_azurecontainer_io ;;
          21) git_clone ezahr chromebook_galliumOS ;;
          22) git_clone ezahr commonground ;;
