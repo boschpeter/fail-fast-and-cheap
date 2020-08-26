@@ -110,7 +110,7 @@ git_clone ezahr MobileIron template
 git_clone ezahr samsungs10e 
 git_clone ezahr dokuwiki 
 git_clone ezahr LPC-repo 
-git_clone ezahr azure-pipelines  ;;
+git_clone ezahr azure-pipelines  
 git_clone boschpeter ansible 
 git_clone boschpeter ansible-role-nvm 
 git_clone boschpeter ansible_fundamentals 
@@ -186,6 +186,7 @@ show_menus() {
   echo " M A I N - M E N U  "
   echo "~~~~~~~~~~~~~~~~~~~~~"
   echo "~~~~~~~~~~~~~~~~~~~~~"
+ 
   echo "20. ezahr AZ_ACI_waardepapieren-demo_westeurope_azurecontainer_io"
   echo "21. ezahr chromebook_galliumOS"
   echo "22. ezahr commonground"
@@ -255,6 +256,7 @@ show_menus() {
   echo "85. boschpeter uport-react"
   echo "86. boschpeter powerdesigner"
   echo "~~~~~~~~~~~~~~~~~~~~~"
+  echo "98. the whole sjebang"
   echo "99. Exit"
 }
 # read input from the keyboard and take a action
@@ -332,7 +334,8 @@ read_options(){
          83) git_clone boschpeter SocialCoinChain ;;
          84) git_clone boschpeter irma_api_server ;;
          85) git_clone boschpeter uport-react ;;
-         86) git_clone boschpeter powerdesigner ;;         
+         86) git_clone boschpeter powerdesigner ;;   
+	 98) sjebang ;;
          99) Exit                                                                   ;;
 		*) echo -e "${RED}Error...${STD}" && sleep 1
 	esac
